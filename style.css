@@ -1,0 +1,55 @@
+/* アプリのサポートページ共通の見た目(ひらめき人生クイズと同じ色) */
+:root {
+  --paper: #FFF7EA;
+  --card: #FFFFFF;
+  --ink: #2B2D42;
+  --ink-soft: #6E7088;
+  --edge: #EADFCB;
+  --yellow: #FFC93C;
+  --yellow-deep: #E5A400;
+  --red: #FF6B5E;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Hiragino Maru Gothic ProN", "M PLUS Rounded 1c", "Hiragino Sans", "Meiryo", sans-serif;
+  line-height: 1.8;
+  font-size: 16px;
+}
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+h1 { font-size: 28px; line-height: 1.4; margin: 8px 0 20px; }
+h2 {
+  font-size: 19px;
+  margin: 32px 0 8px;
+  padding-bottom: 6px;
+  border-bottom: 3px solid var(--edge);
+}
+h3 { font-size: 16px; margin: 20px 0 4px; }
+p, li { overflow-wrap: anywhere; }
+ul { padding-left: 1.4em; }
+a { color: #2F6FE0; }
+.back { display: inline-block; font-weight: bold; text-decoration: none; color: var(--ink-soft); }
+.meta { margin-top: 40px; color: var(--ink-soft); font-size: 14px; }
+.app { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+.app img { border-radius: 22px; box-shadow: 0 8px 20px rgba(43, 45, 66, 0.12); flex: none; }
+.app h1 { margin: 0; }
+.kicker { margin: 0; color: var(--red); font-weight: bold; font-size: 14px; }
+.button {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 999px;
+  background: var(--yellow);
+  border-bottom: 4px solid var(--yellow-deep);
+  color: var(--ink);
+  font-weight: bold;
+  text-decoration: none;
+}
+.button:active { border-bottom-width: 1px; transform: translateY(3px); }
+.list { list-style: none; padding: 0; }
+.list li { background: var(--card); border-radius: 16px; padding: 12px 16px; margin-bottom: 10px; border-bottom: 3px solid var(--edge); }
